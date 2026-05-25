@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    background-color: #d9d9d9;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: #58C358;
+    font-style: italic;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+.gallery {
+    display: flex;
+    height: 400px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-img { flex: 2; }
+.side-img { flex: 1; }
+
+
+.news {
+    background-color: #58C358;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.items-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.dish-card {
+    flex: 1;
+}
+
+.dish-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dish-card h3 {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.dish-card p {
+    font-style: italic;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-info p {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.footer-contacts {
+    text-align: right;
+}
+
+.email {
+    color: white;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.phone {
+    font-style: italic;
+}
+.menu-page {
+    background-color: #58C358;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.menu-title {
+    font-size: 50px;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.menu-card {
+    background-color: rgba(0, 0, 0, 0.15); 
+    border-radius: 12px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.dish-img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dish-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.dish-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.dish-name {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    color: #000;
+}
+
+.dish-price {
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+}
+
+.dish-desc {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.contacts-page {
+    background-color: #222222; 
+    color: white;
+}
+
+.contacts-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    gap: 50px;
+}
+
+.contacts-left, .contacts-right {
+    flex: 1;
+}
+
+
+.logo-large {
+    font-size: 64px;
+    color: #58C358;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.info-list p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.qr-code img {
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: white; 
+    padding: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.feedback-btn {
+    background-color: #58C358;
+    color: #222;
+    border: none;
+    padding: 12px 30px;
+    font-size: 24px;
+    font-style: italic;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.map-section h3 {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.map-placeholder img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+
+@media (max-width: 768px) {
+    .contacts-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .button-container, .map-section h3 {
+        justify-content: center;
+        text-align: center;
+    }
+    .qr-code img {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 768px) {
+   
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    
+    .gallery {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .main-img, .side-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    
+    .items-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    
+    .menu-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .menu-card {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .dish-img {
+        width: 100%; 
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .dish-info {
+        padding-left: 0;
+    }
+
+    .dish-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .dish-desc {
+        max-width: 100%;
+    }
+
+    
+    .contacts-grid {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .logo-large {
+        font-size: 48px;
+    }
+
+    .qr-code img {
+        width: 180px;
+        margin: 20px auto;
+    }
+
+    .button-container {
+        justify-content: center; 
+    }
+
+    .map-section h3 {
+        text-align: center;
+    }
+
+    
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-contacts {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 30px;
+    }
+    
+    .feedback-btn {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+.nav a.active {
+    color: #58C358 !important;
+    border-bottom: 2px solid #58C358;
+    padding-bottom: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    overflow: auto; 
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.modal.open {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #2e2e2e;
+    color: white;
+    margin: 5% auto; 
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    transform: translateY(-50px);
+    transition: transform 0.4s ease;
+}
+
+.modal.open .modal-content {
+    transform: translateY(0);
+}
+
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #aaa;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #58C358; 
+}
+
+
+.modal-body {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.modal-image {
+    flex: 1;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.modal-details {
+    flex: 1.5;
+}
+
+.modal-details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.dish-meta {
+    font-style: italic;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.modal-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #58C358;
+}
+
+.modal-details p {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+.dish-extra {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+    
+    .modal-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .modal-details h2 {
+        font-size: 24px;
+    }
+}
