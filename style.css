@@ -81,6 +81,7 @@ body {
 .dish-card img {
     width: 100%;
     margin-bottom: 15px;
+    max-height: 230px;
 }
 
 .dish-card h3 {
